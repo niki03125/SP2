@@ -9,7 +9,9 @@ public abstract class Title {
         this.title = title;
         this.literatureType = literatureType;
         this.copies = copies;
+        this.rate = 0.067574;
     }
+
 //gettere
 
     public String getTitle() {

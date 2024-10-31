@@ -9,8 +9,8 @@ public class Main {
 
         System.out.println(author1.calculateTotalPay());
 
-        PrintedBook printedBook = new PrintedBook("jaja","TE",140,72);
-        author1.addTitle(printedBook);
+        PrintedBook printedBook1 = new PrintedBook("jaja","TE",140,72);
+        author1.addTitle(printedBook1);
         System.out.println(author1.calculateTotalPay());
 
 

@@ -12,6 +12,8 @@ abstract class Title {
     # double calculateLiteraturePoints()
 }
 
+Author *-- Title
+
 class Author{
     - String name
     - ArrayList<Title> titles

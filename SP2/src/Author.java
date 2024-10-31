@@ -10,12 +10,19 @@ public class Author {
         this.titles = new ArrayList<>();
     }
 
+    public Author() {
+    }
+
     public void addTitle(Title title) {
         titles.add(title);
     }
 
     public float calculateTotalPay() {
-
+    float totalPay = 0;
+    for(Title t : titles){
+        totalPay += t.calculateRoyalty();
+    }
+    return totalPay;
     }
 
     public String getName() {
@@ -34,3 +41,5 @@ public class Author {
         this.titles = new ArrayList<>(titles);
     }
 }
+
+
